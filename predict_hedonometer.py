@@ -1,3 +1,6 @@
+# walid.daboubi[a]gmail.com
+# Date:2020/12/31
+
 import requests
 import pandas as pd
 from numpy import array
