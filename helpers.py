@@ -10,6 +10,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
+# Get user argument 
 def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('-f', '--train_from', help = 'Training data from date in "yyyy/mm/dd" format', required = True)
@@ -36,5 +37,6 @@ def split_sequence(sequence, n_steps):
         y.append(seq_y)
     return np.array(X), np.array(y)
 
+# Convert string dates to yyyy, mm, dd integers 
 def decompose_date(str_date):
     return [int(x) for x in str_date.split('/')]
