@@ -40,3 +40,9 @@ def split_sequence(sequence, n_steps):
 # Convert string dates to yyyy, mm, dd integers 
 def decompose_date(str_date):
     return [int(x) for x in str_date.split('/')]
+
+# Mean Abs Percentage Error
+def mape(ground_truth, prediction):
+
+    ground_truth,prediction = np.array(ground_truth),np.array(prediction)
+    return round(np.mean((np.abs(ground_truth-prediction)/ground_truth))*100,2)
