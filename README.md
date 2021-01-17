@@ -1,4 +1,4 @@
-# Big events prediction with tweets and AI
+# Big events prediction with tweets and Ai
 
 Models:
 
