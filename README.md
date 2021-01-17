@@ -1,4 +1,4 @@
-# future-prediction-using-tweets-and-ai
+# Big event prediction with tweets and AI
 
 Models:
 
