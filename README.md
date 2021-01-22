@@ -3,15 +3,15 @@
 ## virtual environment
 
 ```
-pip install pipenv
-pipenv install --deploy --system --dev
-pipenv shell
+$ pip install pipenv
+$ pipenv install --deploy --system --dev
+$ pipenv shell
 ```
 
 ## How to use
 
 ```
-python crystall_ball.py -h
+$python crystall_ball.py -h
 usage: crystall_ball.py [-h] -f TRAIN_FROM -u TRAIN_UNTIL [-d FUTURE_DEPTH]
                         [-s STEPS] -m MODEL [-l LANGUAGE]
 
@@ -35,7 +35,7 @@ optional arguments:
 ## Example
 
 ```
-python crystall_ball.py -f "2020/06/01" -u "2020/12/01" -d 3 -s 60 -l en_all -m "lstm"
+$ python crystall_ball.py -f "2020/06/01" -u "2020/12/01" -d 3 -s 60 -l en_all -m "lstm"
 ```
 
 ## Details
