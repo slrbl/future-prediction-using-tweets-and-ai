@@ -1,9 +1,7 @@
-import requests
-import pandas as pd
+
+from helpers import *
 import plotly.express as px
 from fbprophet import Prophet
-from helpers import get_args, mape
-from datetime import timedelta, datetime
 
 ARGS = get_args()
 
@@ -13,17 +11,8 @@ language = ARGS["language"] if ARGS["language"] else "en_all"
 # depth from train_until date point in days
 future_depth = int(ARGS["future_depth"]) if ARGS["future_depth"] else 365 * 2
 
-# raw data
-URI = "http://hedonometer.org/api/v1/events"
-response = requests.get(
-    URI,
-    params={
-        "format": "json",
-        "timeseries__title": language,
-        "date__gte": initial_date,
-        "limit": "100000",
-    },
-).json()
+response = get_time_series(language,'100000','events',initial_date)
+
 # only useful data to our study
 useful_data = [
     {
@@ -100,4 +89,4 @@ fig.update_traces(line_color="red")
 fig.show()
 
 # plot trend and seasonality
-prophet.plot_components(forecast)
+#prophet.plot_components(forecast)
