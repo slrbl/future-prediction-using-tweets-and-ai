@@ -1,4 +1,4 @@
-# Big events prediction with tweets and Ai
+# Big events prediction with tweets and time series analysis
 
 ## Virtual environment
 
