@@ -1,6 +1,6 @@
 # Big events prediction with tweets and Ai
 
-## virtual environment
+## Virtual environment
 
 ```
 $ pip install pipenv
@@ -8,7 +8,7 @@ $ pipenv install --deploy --system --dev
 $ pipenv shell
 ```
 
-## How to use
+## Usage
 
 ```
 $python crystall_ball.py -h
