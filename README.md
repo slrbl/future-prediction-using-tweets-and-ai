@@ -40,3 +40,5 @@ $ python crystall_ball.py -f "2020/06/01" -u "2020/12/01" -d 3 -s 60 -l en_all -
 
 ## Details
 https://www.linkedin.com/pulse/future-predictions-tweets-lstm-networks-2021-crystal-ball-daboubi/
+
+http://hedonometer.org
